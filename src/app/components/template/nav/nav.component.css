@@ -1,0 +1,12 @@
+.container {
+  height: 85%;
+  background-color: rgb(255, 227, 255);
+}
+.sidenav {
+  background-color: rgb(243, 199, 243);
+}
+
+i {
+  padding-right: 0.5rem;
+  color: hsl(300, 12%, 20%);
+}
