@@ -1,0 +1,16 @@
+mat-toolbar p.roomano786 {
+  color: rgb(255, 157, 222);
+  font-size: 0.8rem;
+}
+
+.footer {
+  background-color: hsl(300, 12%, 20%);
+  position: fixed;
+  bottom: 0;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(255, 157, 222);
+}
