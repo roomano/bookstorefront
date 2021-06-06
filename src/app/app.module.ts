@@ -11,13 +11,20 @@ import { NavComponent } from './components/template/nav/nav.component';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
 import {MatIconModule} from '@angular/material/icon';
+import { HomeComponent } from './components/views/home/home.component';
+import {MatCardModule} from '@angular/material/card';
+import { CategoriaReadComponent } from './components/views/categoria/categoria-read/categoria-read.component';
+import {MatTableModule} from '@angular/material/table';
+import { HttpClientModule } from "@angular/common/http"
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    NavComponent
+    NavComponent,
+    HomeComponent,
+    CategoriaReadComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +33,10 @@ import {MatIconModule} from '@angular/material/icon';
     MatToolbarModule,
     MatSidenavModule,
     MatListModule,
-    MatIconModule
+    MatIconModule,
+    MatCardModule,
+    MatTableModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

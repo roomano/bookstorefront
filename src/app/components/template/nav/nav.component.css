@@ -1,9 +1,9 @@
 .container {
   height: 85%;
-  background-color: rgb(255, 227, 255);
+  /* background-color: rgb(255, 227, 255); */
 }
 .sidenav {
-  background-color: rgb(243, 199, 243);
+  background-color: #f3c7f3;
 }
 
 i {

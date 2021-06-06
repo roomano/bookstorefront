@@ -1,0 +1,17 @@
+.content {
+  width: 90%;
+  margin: 1rem auto auto auto;
+}
+
+.content .title {
+  color: hsl(300, 12%, 20%);
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 0.8rem;
+}
+
+.table {
+  width: 100%;
+  background-color: rgb(250, 192, 250);
+  color: black;
+}
