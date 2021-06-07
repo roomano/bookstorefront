@@ -1,0 +1,44 @@
+.content {
+    width: 90%;
+    margin: 1rem auto auto auto;
+}
+
+.content .title {
+    color: hsl(300, 12%, 20%);
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 0.8rem;
+}
+
+button {
+    margin-bottom: 1rem;
+    color: #ff9dde;
+    background-color: hsl(300, 12%, 20%);
+    font-size: 0.7rem;
+}
+
+.table {
+    width: 100%;
+    background-color: rgb(250, 192, 250);
+    color: black;
+}
+div table th {
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+}
+i {
+    font-size: 1.2rem;
+}
+i.edit {
+    color: hsl(300, 12%, 20%);
+}
+i.delete {
+    color: rgb(255, 56, 56);
+    margin-left: 1rem;
+}
+.mat-header-accoes {
+    width: 5rem;
+}
