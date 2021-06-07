@@ -3,6 +3,10 @@ mat-toolbar p.roomano786 {
   font-size: 0.8rem;
 }
 
+mat-toolbar span {
+  margin-top: 1rem;
+}
+
 .footer {
   background-color: hsl(300, 12%, 20%);
   position: fixed;
