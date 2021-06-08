@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {LivroModel} from "../livro.model";
 import {LivroService} from "../livro.service";
-import {ActivatedRoute} from "@angular/router";
+import {ActivatedRoute, Router} from "@angular/router";
 
 @Component({
   selector: 'app-livro-read-all',
@@ -16,7 +16,7 @@ export class LivroReadAllComponent implements OnInit {
 
   livros: LivroModel[] = []
 
-  constructor(private service: LivroService, private route: ActivatedRoute) { }
+  constructor(private service: LivroService, private route: ActivatedRoute, private router: Router) { }
 
   ngOnInit(): void {
     this.id_cat = this.route.snapshot.paramMap.get('id_cat')!
@@ -29,4 +29,11 @@ export class LivroReadAllComponent implements OnInit {
       console.log(this.livros)
     })
   }
+  navegarCriaLivro(): void {
+    this.router.navigate([`categorias/${this.id_cat}/livros/create`])
+  }
+  cancel(){
+    this.router.navigate(['categorias'])
+  }
 }
+
