@@ -1,1 +1,25 @@
-<p>livro-delete works!</p>
+<form>
+    <div class="title">
+        <h1>APAGAR LIVRO</h1>
+    </div>
+    <mat-form-field class="form">
+        <mat-label>TÍTULO</mat-label>
+        <input matInput [(ngModel)]="livro.titulo" disabled type="text" name="titulo" placeholder="ex. JAVA 8" >
+
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>NOME DO AUTOR</mat-label>
+        <input matInput [(ngModel)]="livro.nome_autor"  disabled type="text" name="nome_autor" placeholder="ex. Deitel" >
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>TEXTO</mat-label>
+        <textarea matInput [(ngModel)]="livro.texto" disabled type="text" name="texto" placeholder="ex. Aprenda a os novos recursos do JAVA" ></textarea>
+    </mat-form-field>
+
+    <div class="buttons">
+        <button (click)="delete()" mat-stroked-button class="mat-elevation-z2">APAGAR</button>
+        <button (click)="cancel()" mat-stroked-button class="mat-elevation-z2 " color="warn">CANCELAR</button>
+    </div>
+</form>

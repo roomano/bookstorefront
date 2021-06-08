@@ -4,7 +4,7 @@
     </div>
     <mat-form-field class="form">
         <mat-label>TÍTULO</mat-label>
-        <input matInput [(ngModel)]="livro.titulo" [formControl]="titulo"  required type="text" name="titulo" placeholder="ex. JAVA 8" maxlength="30">
+        <input matInput [(ngModel)]="livro.titulo" [formControl]="titulo"  required type="text" name="titulo" placeholder="ex. JAVA 8" maxlength="50">
         <mat-error *ngIf="titulo.invalid">{{ getMessage('titulo') }}</mat-error>
     </mat-form-field>
 

@@ -29,7 +29,6 @@ export class LivroUpdateComponent implements OnInit {
 
   ngOnInit(): void {
     this.id_cat = this.route.snapshot.paramMap.get('id_cat')!
-
     this.livro.id = this.route.snapshot.paramMap.get('id')!
     this.findById( )
   }
@@ -44,8 +43,8 @@ export class LivroUpdateComponent implements OnInit {
   }
   update(): void{
     this.service.update(this.livro).subscribe((resposta) => {
-      this.router.navigate([`categorias/${this.id_cat}/livros` ])
       this.service.mensagem("livro atualizado")
+      this.router.navigate([`categorias/${this.id_cat}/livros` ])
     }, err => {
       this.router.navigate([`categorias/${this.id_cat}/livros`])
       this.service.mensagem('erro ao atualizar o livro')
