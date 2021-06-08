@@ -16,11 +16,23 @@ export class LivroService {
     const url = `${this.baseUrl}/livros?categoria=${id_cat}`
     return this.http.get<LivroModel[]>(url)
   }
+
+  findById(id: String): Observable<LivroModel>{
+    const url = `${this.baseUrl}/livros/${id}`
+    return this.http.get<LivroModel>(url)
+  }
+
   create(livro: LivroModel, id_cat: String): Observable<LivroModel> {
     const url = `${this.baseUrl}/livros?categoria=${id_cat}`
     return this.http.post<LivroModel>(url, livro)
   }
-  mensagem(str: String): void {
+
+  update(livro: LivroModel): Observable<LivroModel>{
+    const url = `${this.baseUrl}/livros/${livro.id}`
+    return this.http.put<LivroModel>(url, livro)
+  }
+
+  mensagem(str: String):void {
     this._snack.open(`${str}`, 'ok!', {horizontalPosition: 'end', verticalPosition:'top', duration: 5000})
 
   }
