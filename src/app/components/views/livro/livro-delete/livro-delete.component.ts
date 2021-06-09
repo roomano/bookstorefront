@@ -30,7 +30,11 @@ export class LivroDeleteComponent implements OnInit {
   }
   findById(): void {
     this.service.findById(this.livro.id!).subscribe((resposta) => {
-      this.livro = resposta
+      
+      this.livro.nome_autor = resposta.nome_autor
+      this.livro.texto = resposta.texto
+      this.livro.titulo = resposta.titulo
+
     })
   }
 

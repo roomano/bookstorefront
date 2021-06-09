@@ -30,11 +30,14 @@ export class LivroUpdateComponent implements OnInit {
   ngOnInit(): void {
     this.id_cat = this.route.snapshot.paramMap.get('id_cat')!
     this.livro.id = this.route.snapshot.paramMap.get('id')!
-    this.findById( )
+    this.findById()
   }
   findById(): void {
     this.service.findById(this.livro.id!).subscribe((resposta)=>{
-      this.livro = resposta
+
+      this.livro.nome_autor = resposta.nome_autor
+      this.livro.texto = resposta.texto
+      this.livro.titulo = resposta.titulo
     })
 
   }

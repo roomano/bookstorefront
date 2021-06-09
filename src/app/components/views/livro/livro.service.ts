@@ -38,7 +38,10 @@ export class LivroService {
   }
 
   mensagem(str: String):void {
-    this._snack.open(`${str}`, 'ok!', {horizontalPosition: 'end', verticalPosition:'top', duration: 5000})
+    this._snack.open(`${str}`, 'ok!', {
+      horizontalPosition: 'end', 
+      verticalPosition:'top', duration: 5000
+    })
 
   }
 }
