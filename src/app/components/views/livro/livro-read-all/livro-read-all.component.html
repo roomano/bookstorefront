@@ -26,7 +26,7 @@
             <ng-container matColumnDef="livros">
                 <th class="mat-header-livros" mat-header-cell *matHeaderCellDef> LER LIVRO</th>
                 <td mat-cell *matCellDef="let row">
-                    <a ><i class="material-icons edit">book</i></a>
+                    <a routerLink="{{ row.id }}/read" ><i class="material-icons edit">book</i></a>
                 </td>
             </ng-container>
 
